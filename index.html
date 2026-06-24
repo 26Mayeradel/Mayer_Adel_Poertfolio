@@ -1,0 +1,1039 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mayer Adel – Software Engineer, Frontend Developer & Problem Solver. DEPI Graduate building modern web experiences."
+    />
+    <meta
+      name="keywords"
+      content="Mayer Adel, Software Engineer, Frontend Developer, HTML, CSS, JavaScript, Portfolio"
+    />
+    <meta name="author" content="Mayer Adel" />
+    <title>Mayer Adel — Software Engineer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===================== CURSOR ===================== -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>MA<span class="logo-bracket"
+            >/&gt;</span
+          >
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certificates" class="nav-link">Certificates</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+      <canvas class="hero-canvas" id="heroCanvas"></canvas>
+
+      <!-- Floating ambient shapes -->
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+
+      <div class="hero-content">
+        <div class="hero-badge reveal-up">
+          <span class="badge-dot"></span>
+          <span>Available for opportunities</span>
+        </div>
+
+        <h1 class="hero-title reveal-up">
+          <span class="title-line">Hi, I'm</span>
+          <span class="title-name gradient-text">Mayer Adel</span>
+        </h1>
+
+        <div class="hero-typing reveal-up">
+          <span class="typing-prefix">$ </span>
+          <span class="typing-text" id="typingText"></span>
+          <span class="typing-cursor">▌</span>
+        </div>
+
+        <p class="hero-desc reveal-up">
+          A passionate Software Engineer crafting clean, performant, and
+          accessible digital experiences. DEPI Graduate dedicated to turning
+          complex problems into elegant solutions.
+        </p>
+
+        <div class="hero-cta reveal-up">
+          <a href="#projects" class="btn btn-primary">
+            <span>View My Work</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            <span>Let's Talk</span>
+          </a>
+        </div>
+
+        <div class="hero-socials reveal-up">
+          <a
+            href="https://github.com/26Mayeradel"
+            target="_blank"
+            rel="noopener"
+            class="social-link"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mayer-adel/"
+            target="_blank"
+            rel="noopener"
+            class="social-link"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/mayer.adel.359"
+            target="_blank"
+            rel="noopener"
+            class="social-link"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="mailto:mayeradel200@email.com"
+            class="social-link"
+            aria-label="Email"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-label reveal-up">
+          <span class="label-mono">01 /</span> About
+        </div>
+
+        <div class="about-grid">
+          <div class="about-visual reveal-left">
+            <div class="about-card glass-card">
+              <div class="about-avatar">
+                <div class="avatar-initials">
+                  <img
+                    src="./photos/myphoto.jpg"
+                    alt="Mayer Adel"
+                    class="profile-img"
+                  />
+                </div>
+                <div class="avatar-ring"></div>
+              </div>
+              <div class="about-stats">
+                <div class="stat-item">
+                  <span class="stat-number" data-target="15">4</span>
+                  <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                  <span class="stat-number" data-target="8">2</span>
+                  <span class="stat-label">Certificates</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                  <span class="stat-number" data-target="2">1</span>
+                  <span class="stat-label">Years Exp</span>
+                </div>
+              </div>
+              <div class="depi-badge">
+                <i class="fas fa-graduation-cap"></i>
+                <span>DEPI Graduate</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-text reveal-right">
+            <h2 class="section-heading">
+              Building the web,<br />
+              <span class="gradient-text">one line at a time</span>
+            </h2>
+            <p>
+              I'm Mayer Adel, a Software Engineer and Frontend Developer based
+              in Egypt. I graduated from the
+              <strong>Digital Egypt Pioneers Initiative (DEPI)</strong> — a
+              national program dedicated to building Egypt's next generation of
+              tech talent.
+            </p>
+            <p>
+              My passion lies at the intersection of clean code and beautiful
+              design. I believe great software isn't just functional — it's
+              intuitive, fast, and a pleasure to use. Whether it's a
+              pixel-perfect UI or a well-architected data structure, I care
+              about the craft.
+            </p>
+            <p>
+              Beyond frontend, I have a strong foundation in
+              <strong>C++</strong>, Data Structures, and Algorithms — skills
+              that make me a sharper problem solver and a more thoughtful
+              developer.
+            </p>
+
+            <div class="about-goals">
+              <div class="goal-tag">
+                <i class="fas fa-rocket"></i> Junior Frontend Role
+              </div>
+              <div class="goal-tag">
+                <i class="fas fa-code-branch"></i> Open Source Contributor
+              </div>
+              <div class="goal-tag">
+                <i class="fas fa-layer-group"></i> Full-Stack Growth
+              </div>
+            </div>
+
+            <div
+              class="about-cta-group"
+              style="
+                display: flex;
+                gap: 1rem;
+                flex-wrap: wrap;
+                margin-top: 1rem;
+              "
+            >
+              <a href="#contact" class="btn btn-primary">
+                <span>Get In Touch</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+
+              <a
+                href="CV.pdf"
+                download="Mayer_Adel_CV.pdf"
+                class="btn btn-outline"
+              >
+                <span>Download CV</span>
+                <i class="fas fa-download"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-label reveal-up">
+          <span class="label-mono">02 /</span> Skills
+        </div>
+        <h2 class="section-heading centered reveal-up">
+          Tools of the <span class="gradient-text">Trade</span>
+        </h2>
+        <p class="section-sub reveal-up">
+          Technologies I use to architect and build digital products.
+        </p>
+
+        <!-- Frontend -->
+        <div class="skills-category reveal-up">
+          <div class="category-label">
+            <span class="cat-icon"><i class="fas fa-palette"></i></span>
+            <span>Frontend</span>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-card glass-card" data-level="95">
+              <div class="skill-icon html-icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <div class="skill-info">
+                <h4>HTML5</h4>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="95"></div>
+                </div>
+                <span class="skill-pct">95%</span>
+              </div>
+            </div>
+            <div class="skill-card glass-card" data-level="90">
+              <div class="skill-icon css-icon">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <div class="skill-info">
+                <h4>CSS3</h4>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="90"></div>
+                </div>
+                <span class="skill-pct">90%</span>
+              </div>
+            </div>
+            <div class="skill-card glass-card" data-level="85">
+              <div class="skill-icon js-icon">
+                <i class="fab fa-js-square"></i>
+              </div>
+              <div class="skill-info">
+                <h4>JavaScript</h4>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="85"></div>
+                </div>
+                <span class="skill-pct">85%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Programming -->
+        <div class="skills-category reveal-up">
+          <div class="category-label">
+            <span class="cat-icon"><i class="fas fa-microchip"></i></span>
+            <span>Programming & CS</span>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-card glass-card" data-level="80">
+              <div class="skill-icon cpp-icon">
+                <i class="fas fa-copyright"></i>
+              </div>
+              <div class="skill-info">
+                <h4>C++</h4>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="80"></div>
+                </div>
+                <span class="skill-pct">80%</span>
+              </div>
+            </div>
+            <div class="skill-card glass-card" data-level="82">
+              <div class="skill-icon ds-icon">
+                <i class="fas fa-sitemap"></i>
+              </div>
+              <div class="skill-info">
+                <h4>Data Structures</h4>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="82"></div>
+                </div>
+                <span class="skill-pct">82%</span>
+              </div>
+            </div>
+            <div class="skill-card glass-card" data-level="78">
+              <div class="skill-icon algo-icon">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <div class="skill-info">
+                <h4>Algorithms</h4>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="78"></div>
+                </div>
+                <span class="skill-pct">78%</span>
+              </div>
+            </div>
+            <div class="skill-card glass-card" data-level="88">
+              <div class="skill-icon ps-icon"><i class="fas fa-brain"></i></div>
+              <div class="skill-info">
+                <h4>Problem Solving</h4>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="88"></div>
+                </div>
+                <span class="skill-pct">88%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skills-category reveal-up">
+          <div class="category-label">
+            <span class="cat-icon"><i class="fas fa-tools"></i></span>
+            <span>Tools & Workflow</span>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-card glass-card" data-level="88">
+              <div class="skill-icon git-icon">
+                <i class="fab fa-git-alt"></i>
+              </div>
+              <div class="skill-info">
+                <h4>Git</h4>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="88"></div>
+                </div>
+                <span class="skill-pct">88%</span>
+              </div>
+            </div>
+            <div class="skill-card glass-card" data-level="90">
+              <div class="skill-icon gh-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="skill-info">
+                <h4>GitHub</h4>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="90"></div>
+                </div>
+                <span class="skill-pct">90%</span>
+              </div>
+            </div>
+            <div class="skill-card glass-card" data-level="92">
+              <div class="skill-icon vsc-icon"><i class="fas fa-code"></i></div>
+              <div class="skill-info">
+                <h4>VS Code</h4>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="92"></div>
+                </div>
+                <span class="skill-pct">92%</span>
+              </div>
+            </div>
+            <div class="skill-card glass-card" data-level="75">
+              <div class="skill-icon fig-icon">
+                <i class="fab fa-figma"></i>
+              </div>
+              <div class="skill-info">
+                <h4>Figma</h4>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="75"></div>
+                </div>
+                <span class="skill-pct">75%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-label reveal-up">
+          <span class="label-mono">03 /</span> Projects
+        </div>
+        <h2 class="section-heading centered reveal-up">
+          Featured <span class="gradient-text">Work</span>
+        </h2>
+        <p class="section-sub reveal-up">
+          A selection of projects I've built with care and craftsmanship.
+        </p>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card glass-card reveal-up">
+            <div class="project-image" style="--proj-hue: 260deg">
+              <div class="project-img-inner">
+                <img
+                  src="./photos/aura.png"
+                  alt="AURA Cafe Preview"
+                  class="proj-img-src"
+                />
+              </div>
+              <div class="project-overlay">
+                <a
+                  href="https://26mayeradel.github.io/AURA-Cafe/"
+                  class="proj-link-btn"
+                  aria-label="Live Demo"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+                <a
+                  href="https://github.com/26Mayeradel/AURA-Cafe"
+                  class="proj-link-btn"
+                  aria-label="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">AURA Cafe</h3>
+              <p class="project-desc">
+                AURA Cafe landing page is a modern, fully responsive website
+                built with HTML, CSS, and JavaScript. It features a
+                mobile-friendly navigation menu, smooth animations, and clean
+                sections for showcasing the cafe, menu, reviews, and contact
+                details, all designed for a seamless user experience across
+                devices.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/26Mayeradel/AURA-Cafe"
+                  class="btn btn-sm btn-ghost"
+                  ><i class="fab fa-github"></i> Source</a
+                >
+                <a
+                  href="https://26mayeradel.github.io/AURA-Cafe/"
+                  class="btn btn-sm btn-primary"
+                  ><span>Live Demo</span> <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card glass-card reveal-up">
+            <div class="project-image" style="--proj-hue: 190deg">
+              <div class="project-img-inner">
+                <img
+                  src="./photos/car.png"
+                  alt="Auto Elite Car Showroom Preview"
+                  class="proj-img-src"
+                />
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="proj-link-btn" aria-label="Live Demo"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+                <a href="#" class="proj-link-btn" aria-label="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Auto Elite Car Showroom</h3>
+              <p class="project-desc">
+                A modern responsive landing page for Auto Elite Car Showroom
+                built with HTML, CSS, and JavaScript. It features a clean luxury
+                design, mobile-friendly navigation, smooth animations, and
+                sections for featured cars, services, testimonials, and contact,
+                all focused on providing a premium and seamless browsing
+                experience.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-sm btn-ghost"
+                  ><i class="fab fa-github"></i> Source</a
+                >
+                <a href="#" class="btn btn-sm btn-primary"
+                  ><span>Live Demo</span> <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card glass-card reveal-up">
+            <div class="project-image" style="--proj-hue: 190deg">
+              <div class="project-img-inner">
+                <img
+                  src="./photos/fish.png"
+                  alt="Seafood Restaurant Preview"
+                  class="proj-img-src"
+                />
+              </div>
+              <div class="project-overlay">
+                <a
+                  href="https://26mayeradel.github.io/Maris-fish-web/"
+                  class="proj-link-btn"
+                  aria-label="Live Demo"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+                <a
+                  href="https://github.com/26Mayeradel/Maris-fish-web"
+                  class="proj-link-btn"
+                  aria-label="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Seafood Restaurant</h3>
+              <p class="project-desc">
+                A modern responsive landing page for a Seafood Restaurant built
+                with HTML, CSS, and JavaScript. It features an elegant
+                ocean-inspired design, a mobile-friendly navigation menu, and
+                smooth animations for a seamless user experience. The page
+                includes sections for featured seafood dishes, menu highlights,
+                customer reviews, and contact details, all presented in a clean
+                and visually appetizing layout.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/26Mayeradel/Maris-fish-web"
+                  class="btn btn-sm btn-ghost"
+                  ><i class="fab fa-github"></i> Source</a
+                >
+                <a
+                  href="https://26mayeradel.github.io/Maris-fish-web/"
+                  class="btn btn-sm btn-primary"
+                  ><span>Live Demo</span> <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card glass-card reveal-up">
+            <div class="project-image" style="--proj-hue: 190deg">
+              <div class="project-img-inner">
+                <img
+                  src="./photos/lawer.png"
+                  alt="Lawyer Office Preview"
+                  class="proj-img-src"
+                />
+              </div>
+              <div class="project-overlay">
+                <a href="https://26mayeradel.github.io/Law_landing_page/" class="proj-link-btn" aria-label="Live Demo"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+                <a href="https://github.com/26Mayeradel/Law_landing_page" class="proj-link-btn" aria-label="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Lawyer Office</h3>
+              <p class="project-desc">
+                A modern responsive landing page for a Lawyer Office built with
+                HTML, CSS, and JavaScript. It features a professional design, a
+                mobile-friendly navigation menu, and smooth animations for a
+                seamless user experience. The page includes sections for
+                practice areas, attorney profiles, client testimonials, and
+                contact details, all presented in a clean and trustworthy
+                layout.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/26Mayeradel/Law_landing_page" class="btn btn-sm btn-ghost"
+                  ><i class="fab fa-github"></i> Source</a
+                >
+                <a href="https://26mayeradel.github.io/Law_landing_page/" class="btn btn-sm btn-primary"
+                  ><span>Live Demo</span> <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </article>
+
+          
+
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CERTIFICATES ===================== -->
+    <section class="certificates section" id="certificates">
+      <div class="container">
+        <div class="section-label reveal-up">
+          <span class="label-mono">04 /</span> Certificates
+        </div>
+        <h2 class="section-heading centered reveal-up">
+          Earned <span class="gradient-text">Recognition</span>
+        </h2>
+        <p class="section-sub reveal-up">
+          Certifications that validate my skills and commitment to continuous
+          learning.
+        </p>
+
+        <div class="certs-timeline">
+          <div class="cert-item reveal-up">
+            <div class="cert-marker">
+              <div class="cert-dot"><i class="fas fa-certificate"></i></div>
+              <div class="cert-line"></div>
+            </div>
+            <div class="cert-card glass-card">
+              <div class="cert-header">
+                <div class="cert-org-badge depi-color">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="cert-meta">
+                  <span class="cert-org"
+                    >Digital Egypt Pioneers Initiative</span
+                  >
+                  <span class="cert-date"
+                    ><i class="fas fa-calendar-alt"></i> 2024</span
+                  >
+                </div>
+              </div>
+              <h3 class="cert-title">Frontend Web Development Track</h3>
+              <p class="cert-desc">
+                Completed the intensive DEPI Frontend Development program
+                covering HTML, CSS, JavaScript, and modern web practices.
+              </p>
+              <a href="#" class="btn btn-sm btn-ghost cert-btn"
+                ><i class="fas fa-external-link-alt"></i> View Certificate</a
+              >
+            </div>
+          </div>
+
+          <div class="cert-item reveal-up">
+            <div class="cert-marker">
+              <div class="cert-dot"><i class="fas fa-certificate"></i></div>
+              <div class="cert-line"></div>
+            </div>
+            <div class="cert-card glass-card">
+              <div class="cert-header">
+                <div class="cert-org-badge cs50-color">
+                  <i class="fas fa-university"></i>
+                </div>
+                <div class="cert-meta">
+                  <span class="cert-org">Harvard University / edX</span>
+                  <span class="cert-date"
+                    ><i class="fas fa-calendar-alt"></i> 2023</span
+                  >
+                </div>
+              </div>
+              <h3 class="cert-title">
+                Programming with Python
+              </h3>
+              <p class="cert-desc">
+                Successfully completed a Python Programming course, gaining practical experience in Python fundamentals, object-oriented programming, data structures, file handling, and working with popular libraries such as NumPy, Pandas, Matplotlib, and other tools used for automation, data analysis, and software development.
+
+              </p>
+              <a href="Course_Certificate_En.pdf" class="btn btn-sm btn-ghost cert-btn"
+                ><i class="fas fa-external-link-alt"></i> View Certificate</a
+              >
+            </div>
+          </div>
+
+          <div class="cert-item reveal-up">
+            <div class="cert-marker">
+              <div class="cert-dot"><i class="fas fa-certificate"></i></div>
+              <div class="cert-line"></div>
+            </div>
+            <div class="cert-card glass-card">
+              <div class="cert-header">
+                <div class="cert-org-badge coursera-color">
+                  <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="cert-meta">
+                  <span class="cert-org">Coursera / Meta</span>
+                  <span class="cert-date"
+                    ><i class="fas fa-calendar-alt"></i> 2024</span
+                  >
+                </div>
+              </div>
+              <h3 class="cert-title">HTML & CSS in Depth</h3>
+              <p class="cert-desc">
+                Deep dive into modern HTML5 semantics, advanced CSS layouts,
+                animations, and responsive design principles from Meta's
+                professional curriculum.
+              </p>
+              <a href="#" class="btn btn-sm btn-ghost cert-btn"
+                ><i class="fas fa-external-link-alt"></i> View Certificate</a
+              >
+            </div>
+          </div>
+
+          <div class="cert-item reveal-up">
+            <div class="cert-marker">
+              <div class="cert-dot"><i class="fas fa-certificate"></i></div>
+              <div class="cert-line"></div>
+            </div>
+            <div class="cert-card glass-card">
+              <div class="cert-header">
+                <div class="cert-org-badge js-color">
+                  <i class="fab fa-js"></i>
+                </div>
+                <div class="cert-meta">
+                  <span class="cert-org">Mahara Tech</span>
+                  <span class="cert-date"
+                    ><i class="fas fa-calendar-alt"></i> 2025</span
+                  >
+                </div>
+              </div>
+              <h3 class="cert-title">
+                UX Design Fundamentals
+              </h3>
+              <p class="cert-desc">
+                Successfully completed the UX Design Fundamentals course, gaining a solid understanding of user experience design principles, user research, personas, user flows, wireframing, prototyping, and usability best practices to create intuitive and user-centered digital products.
+
+              </p>
+              <a href="./photos/5900242990133874192_121.jpg" class="btn btn-sm btn-ghost cert-btn"
+                ><i class="fas fa-external-link-alt"></i> View Certificate</a
+              >
+            </div>
+          </div>
+
+          <div class="cert-item reveal-up">
+            <div class="cert-marker">
+              <div class="cert-dot"><i class="fas fa-certificate"></i></div>
+              <div class="cert-line"></div>
+            </div>
+            <div class="cert-card glass-card">
+              <div class="cert-header">
+                <div class="cert-org-badge git-color">
+                  <i class="fab fa-git-alt"></i>
+                </div>
+                <div class="cert-meta">
+                  <span class="cert-org">Udemy</span>
+                  <span class="cert-date"
+                    ><i class="fas fa-calendar-alt"></i> 2023</span
+                  >
+                </div>
+              </div>
+              <h3 class="cert-title">Git & GitHub: The Complete Guide</h3>
+              <p class="cert-desc">
+                Comprehensive coverage of version control: branching strategies,
+                merging, rebasing, pull requests, and collaborative development
+                workflows.
+              </p>
+              <a href="#" class="btn btn-sm btn-ghost cert-btn"
+                ><i class="fas fa-external-link-alt"></i> View Certificate</a
+              >
+            </div>
+          </div>
+
+          <div class="cert-item reveal-up">
+            <div class="cert-marker">
+              <div class="cert-dot"><i class="fas fa-certificate"></i></div>
+            </div>
+            <div class="cert-card glass-card">
+              <div class="cert-header">
+                <div class="cert-org-badge problem-color">
+                  <i class="fas fa-puzzle-piece"></i>
+                </div>
+                <div class="cert-meta">
+                  <span class="cert-org">Codeforces / ICPC</span>
+                  <span class="cert-date"
+                    ><i class="fas fa-calendar-alt"></i> 2024</span
+                  >
+                </div>
+              </div>
+              <h3 class="cert-title">
+                Competitive Programming — ECPC Qualifier & Codeforces Rounds
+              </h3>
+              <p class="cert-desc">
+                Active competitive programmer with consistent participation in
+                Codeforces rounds and the ICPC regional training program in
+                Egypt.
+              </p>
+              <a href="./photos/5900242990133874197_121.jpg" class="btn btn-sm btn-ghost cert-btn"
+                ><i class="fas fa-external-link-alt"></i> View Profile</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-label reveal-up">
+          <span class="label-mono">05 /</span> Contact
+        </div>
+        <h2 class="section-heading centered reveal-up">
+          Let's <span class="gradient-text">Connect</span>
+        </h2>
+        <p class="section-sub reveal-up">
+          Have a project in mind or just want to say hi? My inbox is always
+          open.
+        </p>
+
+        <div class="contact-grid">
+          <!-- Info -->
+          <div class="contact-info reveal-left">
+            <div class="contact-info-item glass-card">
+              <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+              <div class="ci-text">
+                <span class="ci-label">Email</span>
+                <a href="mailto:mayeradel200@email.com" class="ci-value"
+                  >mayeradel200@email.com</a
+                >
+              </div>
+            </div>
+            <div class="contact-info-item glass-card">
+              <div class="ci-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div class="ci-text">
+                <span class="ci-label">LinkedIn</span>
+                <a
+                  href="https://www.linkedin.com/in/mayer-adel/"
+                  target="_blank"
+                  rel="noopener"
+                  class="ci-value"
+                  >linkedin.com/in/mayer-adel</a
+                >
+              </div>
+            </div>
+            <div class="contact-info-item glass-card">
+              <div class="ci-icon"><i class="fab fa-github"></i></div>
+              <div class="ci-text">
+                <span class="ci-label">GitHub</span>
+                <a
+                  href="https://github.com/26Mayeradel"
+                  target="_blank"
+                  rel="noopener"
+                  class="ci-value"
+                  >github.com/26Mayeradel</a
+                >
+              </div>
+            </div>
+            <div class="contact-info-item glass-card">
+              <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="ci-text">
+                <span class="ci-label">Location</span>
+                <span class="ci-value">Egypt 🇪🇬</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="contact-form-wrapper reveal-right">
+            <div class="glass-card form-card">
+              <div class="form-status" id="formStatus"></div>
+              <div id="contactForm" class="contact-form">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <div class="input-wrapper">
+                    <i class="fas fa-user input-icon"></i>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Your full name"
+                      autocomplete="name"
+                    />
+                  </div>
+                  <span class="form-error" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <div class="input-wrapper">
+                    <i class="fas fa-envelope input-icon"></i>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="your@email.com"
+                      autocomplete="email"
+                    />
+                  </div>
+                  <span class="form-error" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <div class="input-wrapper">
+                    <i class="fas fa-tag input-icon"></i>
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      placeholder="What's this about?"
+                    />
+                  </div>
+                  <span class="form-error" id="subjectError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <div class="input-wrapper textarea-wrapper">
+                    <i class="fas fa-comment input-icon textarea-icon"></i>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="5"
+                      placeholder="Tell me about your project or just say hello..."
+                    ></textarea>
+                  </div>
+                  <span class="form-error" id="messageError"></span>
+                </div>
+
+                <button
+                  type="button"
+                  class="btn btn-primary btn-full"
+                  id="submitBtn"
+                  onclick="submitForm()"
+                >
+                  <span id="btnText">Send Message</span>
+                  <i class="fas fa-paper-plane" id="btnIcon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-logo">
+            <span class="logo-bracket">&lt;</span>MA<span class="logo-bracket"
+              >/&gt;</span
+            >
+          </div>
+          <p class="footer-copy">
+            Crafted with
+            <i class="fas fa-heart" style="color: var(--violet)"></i> by
+            <strong>Mayer Adel</strong> — DEPI Graduate &copy; 2025
+          </p>
+          <div class="footer-socials">
+            <a
+              href="https://github.com/26Mayeradel"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/mayer-adel/"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/mayer.adel.359"
+              target="_blank"
+              rel="noopener"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="scripty.js"></script>
+  </body>
+</html>
